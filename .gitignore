@@ -47,7 +47,7 @@ pip-log.txt
 pip-delete-this-directory.txt
 
 # Model artifacts
-*.pkl
+
 *.h5
 *.sav
 

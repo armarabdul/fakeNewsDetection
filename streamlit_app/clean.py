@@ -1,12 +1,11 @@
-# clean.py
-import re
-import string
 import nltk
-import os
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
+import re
 
-nltk.data.path.append(os.path.join(os.path.dirname(__file__), "../nltk_data"))
+# Ensure required NLTK data is downloaded
+nltk.download('stopwords')
+nltk.download('wordnet')
 
 stop_words = set(stopwords.words('english'))
 lemmatizer = WordNetLemmatizer()
