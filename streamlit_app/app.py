@@ -4,8 +4,8 @@ from clean import clean_text
 import joblib
 
 # Load model and vectorizer
-model = joblib.load("../models/logistic_model.pkl")
-vectorizer = joblib.load("../models/tfidf_vectorizer.pkl")
+model = joblib.load("models/logistic_model.pkl")
+vectorizer = joblib.load("models/tfidf_vectorizer.pkl")
 
 # Streamlit UI
 st.set_page_config(page_title="Fake News Detector", page_icon="📰")
